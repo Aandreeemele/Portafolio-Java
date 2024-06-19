@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package Calcular_IMC;
 
 import java.util.Scanner;
@@ -21,3 +22,28 @@ public class IMC {
         System.out.println("Tu IMC es: " + imc);
     }
 }
+=======
+package Calcular_IMC;
+
+import java.util.Scanner;
+
+public class IMC {
+
+    public static double calcularIMc(double peso, double altura) {
+        return peso / (altura * altura);
+    }
+
+    public static void programaIMC() {
+        Scanner intDato = new Scanner(System.in);
+
+        System.out.print("Ingrese el peso: ");
+        double peso = intDato.nextDouble();
+
+        System.out.print("Ingrese la altura: ");
+        double altura = intDato.nextDouble();
+
+        double imc = calcularIMc(peso, altura);
+        System.out.println("Tu IMC es: " + imc);
+    }
+}
+>>>>>>> e68af486062e7bbe137110e965fc0113074cd59a
